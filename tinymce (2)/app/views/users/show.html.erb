@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%= @user.mobile %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= sanitize(@user.address) %>
+  <%= @user.imagepath %>
+</p>
+
+    
+   
+<%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
